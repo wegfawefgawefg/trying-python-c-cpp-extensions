@@ -14,5 +14,7 @@ float vector_get(vector *v, int index);
 vector *vector_add(vector *v1, vector *v2);
 vector *vector_sub(vector *v1, vector *v2);
 float vector_sum(vector *v);
+void vector_fill(vector *v, float value);
+int vector_get_size(vector *v);
 
 #endif // VECTOR_H

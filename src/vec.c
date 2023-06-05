@@ -74,3 +74,16 @@ float vector_sum(vector *v)
     }
     return sum;
 }
+
+void vector_fill(vector *v, float value)
+{
+    for (int i = 0; i < v->size; i++)
+    {
+        v->elements[i] = value;
+    }
+}
+
+int vector_get_size(vector *v)
+{
+    return v->size;
+}
