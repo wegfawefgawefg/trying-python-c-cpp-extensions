@@ -1,5 +1,4 @@
 import time
-import random
 import numpy as np
 from mininumpy import Vector
 
@@ -50,7 +49,8 @@ def test(size):
     print(f"NumPy is {vector_time / numpy_time} times {faster_or_slower} than Vector")
 
 
-for size in [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000]:
+# Keep sizes large enough to be interesting, but avoid easy OOM on typical machines.
+for size in [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000]:
     print(f"For a vector of size = {size}")
     test(size)
     print()

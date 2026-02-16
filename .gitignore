@@ -53,3 +53,5 @@ dkms.conf
 
 /build
 .hypothesis
+.venv/
+__pycache__/
